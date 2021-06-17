@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Taco Villa</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        
+        <header>
+            <!-- LOGO -->
+            <img class="logo" src="img/Taco_Villa.png" alt="Taco Villa Logo" />
+            <!-- HAMBURGER -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <!-- NAV -->
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">menu</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">contact us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="main-content">
+            <h1 class="main-header">the best mexican food in topeka</h1>
+            <button class="btn menu-btn">see menu</button>
+            <button class="btn order-btn">order now</button>
+        </section>
+
+        <section class="about-content">
+            <h1 class="main-header">our story</h1>
+            <p class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corporis nihil iure. Corporis, aliquam dignissimos, dolor et expedita voluptates maxime doloremque ad sed, ipsa alias? Consequatur iste fuga quasi aspernatur!</p>
+        </section>
+
+        <section class="menu-prev-content">
+            <h1 class="main-header">popular items</h1>
+            <button class="btn order-btn">order now</button>
+        </section>
+
+        <script src="index.js"></script>
     </body>
 </html>

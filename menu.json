@@ -1,0 +1,112 @@
+[
+    {
+        "entree": "taco",
+        "price": 1.59,
+        "description": "fried corn shell"
+    },
+    {
+        "entree": "soft taco",
+        "price": 1.99,
+        "description": "fried flour shell"
+    },
+    {
+        "entree": "super taco",
+        "price": 1.99,
+        "description": "fried flour shell"
+    },
+    {
+        "entree": "meat tostada",
+        "price": 2.59,
+        "description": "fried corn shell with beans, meat, cheese, lettuce, taco sauce and a tomato"
+    },
+    {
+        "entree": "bean tostada",
+        "price": 2.29,
+        "description": "Fried corn shell with beans, cheese, lettuce, taco sauce and a tomato"
+    },
+    {
+        "entree": "nacho",
+        "price": 1.49,
+        "description": "Fried corn shell covered with shredded cheese, jalapenos and taco sauce"
+    },
+    {
+        "entree": "soft flour nacho",
+        "price": 1.89,
+        "description": "Soft flour shell rolled up, filled with shredded cheese, jalapeno and taco sause"
+    },
+    {
+        "entree": "fried flour nacho",
+        "price": 1.89,
+        "description": "Fried flour shell covered with shredded cheese, jalapeno and taco sauce"
+    },
+    {
+        "entree": "thing",
+        "price": 2.99,
+        "description": "fried flour shell covered with mean, cheese, taco sauce and onion sauce"
+    },
+    {
+        "entree": "enchiladas",
+        "price": 3.69,
+        "description": "two corn shells filled with meat, cheese, taco sauce and onion sauce"
+    },
+    {
+        "entree": "enchilada platter",
+        "price": 5.99,
+        "description": "Order of enchiladas is covered with queso, served with a side of chips and a scoop of refried beans"
+    },
+    {
+        "entree": "burrito",
+        "price": 3.09,
+        "description": "Meat, refried beans, cheese and onion sauce"
+    },
+    {
+        "entree": "sancho",
+        "price": 3.09,
+        "description": "meat, cheese, lettuce, tomato and taco sauce"
+    },
+    {
+        "entree": "burrito or sancho platter",
+        "price": 5.99,
+        "description": "your choice of burrito or sancho: Comes covered with queso and served with a side of chips and scoop of refried beans"
+    },
+    {
+        "entree": "taco dog",
+        "price": 2.99,
+        "description": "hot dog with meat, cheese and taco sauce"
+    },
+    {
+        "entree": "taco burger",
+        "price": 2.89,
+        "description": "burger bun filled with meat, cheese, lettuce and taco sauce"
+    },
+    {
+        "entree": "mess",
+        "price": 5.99,
+        "description": "open faced burger buns topped with meat, cheese lettuce, taco sauce and covered in queso"
+    },
+    {
+        "entree": "nacho platter",
+        "price": 5.99,
+        "description": "chips covered with queso, meat, sour cream, black olives, tomatoes and a scoop of refried beans"
+    },
+    {
+        "entree": "taco salad",
+        "price": 4.49,
+        "description": "dish of meat, cheese, lettuce and tomatoes served with a side of chips and a side of taco sauce"
+    },
+    {
+        "entree": "super salad",
+        "price": 5.99,
+        "description": "fried flour shell filled with meat, cheese, lettuce, sour cream and tomatoes and served with a side of taco sauce"
+    },
+    {
+        "entree": "chalupa",
+        "price": 3.99,
+        "description": "soft flour shell filled with smoked turkey, cheese, lettuce, tomatoes, sour cream, guacamole and taco sauce"
+    },
+    {
+        "entree": "chalupa salad",
+        "price": 6.49,
+        "description": "fried flour shell bowl filled with smoked turkey, cheese, lettuce, sour cream, tomatoes, guacamole and served with a side of taco sauce"
+    }
+]

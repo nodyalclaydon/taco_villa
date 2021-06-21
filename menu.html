@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Taco Villa</title>
-        <link href="style.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <!-- LOGO -->
-            <img class="logo" src="img/Taco_Villa.png" alt="Taco Villa Logo" />
+            <a href="index.html"><img class="logo" src="img/Taco_Villa.png" alt="Taco Villa Logo" /></a>
             <!-- HAMBURGER -->
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -19,47 +19,40 @@
             <!-- NAV -->
             <div class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">menu</a></li>
+                    <li class="nav__item"><a href="menu.html" class="nav__link">menu</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">contact us</a></li>
                 </ul>
             </div>
         </header>
 
         <section class="menu-prev-content">
-            <h1 class="main-header menu-header">popular items</h1>
-            <div class="popular-items">
-                <div class="popular-item">
-                    <img src="img/tv-burritos.jpeg" alt="burrito" class="popular-item-image" />
-                    <p class="popular-item-text">burrito</p>
-                </div>
-                <div class="popular-item">
-                    <img src="img/tv-thething.jpeg" alt="the thing" class="popular-item-image" />
-                    <p class="popular-item-text">the thing</p>
-                </div>
-                <div class="popular-item">
-                    <img src="img/tv-tacos.jpeg" alt="tacos" class="popular-item-image" />
-                    <p class="popular-item-text">tacos</p>
-                </div>
+            <h1 class="main-header menu-header">entrees</h1>
+            <div class="menu-entrees-container">
+                <!-- menu.js adds content here -->
             </div>
-            <button class="btn menu-btn">see menu</button>
+            <a href="https://www.grubhub.com/restaurant/taco-villa-5300-southwest-21st-street-topeka/2712780" target="_blank"><button class="btn order-btn">order now</button></a>
         </section>
 
         <section class="footer-content">
             <img src="img/Taco_Villa.png" alt="taco villa logo" class="footer-logo" />
-            <div class="footer-nav">
-                <p class="footer-nav-item"><a href="#" class="footer-nav__link">home</a></p>
-                <p class="footer-nav-item"><a href="#" class="footer-nav__link">about us</a></p>
-                <p class="footer-nav-item"><a href="#" class="footer-nav__link">menu</a></p>
-                <p class="footer-nav-item"><a href="#" class="footer-nav__link">contact us</a></p>
+            <div class="footer-links-container">
+                <div class="footer-nav">
+                    <p class="footer-nav-item"><a href="index.html" class="footer-nav__link">home</a></p>
+                    <p class="footer-nav-item"><a href="#" class="footer-nav__link">about us</a></p>
+                    <p class="footer-nav-item"><a href="menu.html" class="footer-nav__link">menu</a></p>
+                    <p class="footer-nav-item"><a href="#" class="footer-nav__link">contact us</a></p>
+                </div>
+                <div class="footer-contact">
+                    <p class="footer-contact-line">(785) 272-8030</p>
+                    <p class="footer-contact-line">5300 SW 21st St,<br> Topeka, KS 66604</p>
+                </div>
             </div>
-            <div class="footer-contact">
-                <p class="footer-contact-line">(785) 272-8030</p>
-                <p class="footer-contact-line">5300 SW 21st St,<br> Topeka, KS 66604</p>
-            </div>
+            <p class="footer-credit">page built by nodyalclaydon</p>
         </section>
 
         <script src="index.js"></script>
+        <script src="menu.js"></script>
     </body>
 </html>

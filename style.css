@@ -18,13 +18,14 @@ body {
 
 /* Header */
 header {
-    background-color: rgb(173, 173, 173);
+    background-color: var(--black);
     padding: 2em 0 4em;
 }
 
 .logo {
     width: 25%;
     min-width: 200px;
+    max-width: 350px;
     display: block;
     margin: 0 auto;
 }
@@ -37,7 +38,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--black);
+    background: var(--white);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -117,14 +118,38 @@ header {
     transform: scale(1.05);
 }
 
+/* Section Layouts */
+section {
+    padding: 10em 1em;
+}
+
+@media (min-width: 800px) {
+    section {
+        padding: 15em 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        padding: 20em 1em;
+    }
+}
+
 /* Main Content Area */
 
 .main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 800px;
-    background-color: rgb(253, 253, 212);
+    background: url(img/tv-interior.jpeg);
+    background-color: rgb(53, 53, 53);
+    height: 100%; /*paralax*/
+    background-attachment: fixed; /*paralax*/
+    /* background-position: center -30em; */
+    background-position: center -25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .main-header {
@@ -133,6 +158,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    color: var(--white);
 }
 
 .btn {
@@ -155,24 +181,117 @@ header {
 /* About Content Area */
 
 .about-content {
-    background-color: lightcyan;
-    height: 800px;
+    background-color: var(--red);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em;
+}
+
+.about-content-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.about-img {
+    width: 60%;
+    max-width: 350px;
+    border: solid var(--white) 8px;
+    border-radius: 3px;
+    transform: rotate(2deg);
+    object-fit: cover;
+    margin-top: 3em;
 }
 
 .text-content {
     font-size: 1.6rem;
+    color: var(--white);
+    max-width: 600px;
+    margin: 2em;
 }
 
 /* Menu Preview Area */
 
+.menu-header { color: var(--black); }
+
 .menu-prev-content {
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em;
+    background-color: var(--white);
+}
+
+.popular-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.popular-item {
+    margin: 2em;
+}
+
+.popular-item-image {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.popular-item-text {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer-content {
+    background-color: var(--black);
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 100px;
+    height:fit-content;
+    margin: 0 auto;
+}
+
+.footer-nav,
+.footer-contact {
+    width: fit-content;
+    display: block;
+}
+
+.footer-nav__link,
+.footer-contact-line {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.footer-nav__link:hover,
+.footer-nav__link:focus {
+    text-decoration: underline;
+}
+
+.footer-credit {
+    color: rgb(126, 126, 126);
+    font-size: 1rem;
+    text-align: center;
 }

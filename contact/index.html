@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Taco Villa</title>
+        <link href="/styles/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- LOGO -->
+            <a href="/home"><img class="logo" src="/img/Taco_Villa.png" alt="Taco Villa Logo" /></a>
+            <!-- HAMBURGER -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <!-- NAV -->
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/home" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="/about" class="nav__link">about us</a></li>
+                    <li class="nav__item"><a href="/menu" class="nav__link">menu</a></li>
+                    <li class="nav__item"><a href="/contact" class="nav__link">contact us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="menu-prev-content">
+            <h1 class="main-header menu-header">call us to place your order</h1>
+            <p class="text-content text-content-phone">
+                <span class="phone-icon">&#9990;</span><a href="tel:+1-785-272-8030">  (785) 272-8030</a>
+            </p>
+            <div class="contact-content-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.3645125565963!2d-95.74690838392166!3d39.02980767955034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87befd43ee1fa029%3A0x6eba84d3cf4202ed!2sTaco%20Villa!5e0!3m2!1sen!2sus!4v1624327819213!5m2!1sen!2sus" id="map" allowfullscreen=""></iframe>
+                <div class="form-container">
+                    <p class="text-content form-text">write us a message:</p>
+                    <form 
+                        accept-charset="UTF-8"
+                        action="https://getform.io/f/7b9c1fe9-d3c1-455e-ac74-69ce83480ff6" 
+                        method="POST"
+                        enctype="multipart/form-data"
+                        target="_blank"
+                        id="form">
+                            <input class="form-inputs" type="text" name="name" placeholder="full name" required>
+                            <input class="form-inputs" type="email" name="email" placeholder="email" required>
+                            <input class="form-inputs" type="text" name="subject" placeholder="subject" required>
+                            <textarea class="form-inputs message-input" type="text" name="message" rows="8" placeholder="type message here..." required></textarea>
+                            <button class="btn menu-btn" type="submit">Send</button>
+                      </form>
+                </div>
+            </div>
+           
+        </section>
+
+        <section class="footer-content">
+            <img src="/img/Taco_Villa.png" alt="taco villa logo" class="footer-logo" />
+            <div class="footer-links-container">
+                <div class="footer-nav">
+                    <p class="footer-nav-item"><a href="/home" class="footer-nav__link">home</a></p>
+                    <p class="footer-nav-item"><a href="/about" class="footer-nav__link">about us</a></p>
+                    <p class="footer-nav-item"><a href="/menu" class="footer-nav__link">menu</a></p>
+                    <p class="footer-nav-item"><a href="/contact" class="footer-nav__link">contact us</a></p>
+                </div>
+                <div class="footer-contact">
+                    <p class="footer-contact-line"><a href="tel:+1-785-272-8030">(785) 272-8030</a></p>
+                    <p class="footer-contact-line">5300 SW 21st St,<br> Topeka, KS 66604</p>
+                </div>
+            </div>
+            <p class="footer-credit">page built by nodyalclaydon</p>
+        </section>
+
+        <script src="/index.js"></script>
+    </body>
+</html>

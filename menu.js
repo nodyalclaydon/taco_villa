@@ -1,7 +1,7 @@
 const menuBoard = document.querySelector(".menu-entrees-container")
 
 async function getMenu() {
-    const data = await fetch("/menu.json")
+    const data = await fetch("/taco_villa/menu.json")
     const entrees = await data.json()
     
     entrees.forEach(item => {

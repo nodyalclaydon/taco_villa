@@ -23,7 +23,7 @@ a {
 /* Header */
 header {
     background-color: var(--black);
-    padding: 2em 0 4em;
+    padding: 2em 0 1em;
 }
 
 .logo {
@@ -31,7 +31,7 @@ header {
     min-width: 200px;
     max-width: 350px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 3em;
 }
 
 .hamburger {
@@ -122,16 +122,30 @@ header {
     transform: scale(1.05);
 }
 
-/* Section Layouts */
+.nav-big {
+    transform: translateX(0);
+    position: sticky;
+    background-color: var(--black);
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.nav__list-big {
+    display: none; /* displays only at 1000px width; */
+    height: fit-content;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav__link-big {
+    font-size: 1.5rem;
+}
+
 section {
     padding: 10em 1em;
 }
 
-@media (min-width: 800px) {
-    section {
-        padding: 15em 1em;
-    }
-}
+
 
 /* Main Content Area */
 
@@ -141,9 +155,8 @@ section {
     justify-content: center;
     background: url(../img/tv-interior.jpeg);
     background-color: rgb(53, 53, 53);
-    height: 100%; /*paralax*/
     background-attachment: fixed; /*paralax*/
-    background-position: center -15em;
+    background-position: center -5em;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
@@ -197,8 +210,10 @@ a { text-decoration: none; }
 }
 
 .about-img {
-    width: 60%;
+    width: 60vw;
     max-width: 350px;
+    height: 60vw;
+    max-height: 350px;
     border: solid var(--white) 8px;
     border-radius: 3px;
     transform: rotate(2deg);
@@ -372,7 +387,6 @@ a { text-decoration: none; }
 
 .footer-logo {
     width: 100px;
-    height:fit-content;
     margin: 0 auto;
 }
 
@@ -403,4 +417,22 @@ a { text-decoration: none; }
     color: rgb(126, 126, 126);
     font-size: 1rem;
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 800px) {
+    section {
+        padding: 15em 1em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav__list-big {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
 }

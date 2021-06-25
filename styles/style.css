@@ -60,6 +60,8 @@ header {
 .hamburger::before { top: 8px; }
 .hamburger::after { bottom: 8px; }
 
+.nav-open { position: fixed; } /* disables scrolling behind menu */
+
 .nav-open .hamburger { transform: rotate(.625turn); }
 
 .nav-open .hamburger::before { transform: rotate(90deg) translateX(-8px); }
@@ -156,9 +158,9 @@ section {
     background: url(../img/tv-interior.jpeg);
     background-color: rgb(53, 53, 53);
     background-attachment: fixed; /*paralax*/
-    background-position: center -5em;
+    background-position: center -3em;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto; /* changes to cover on bigger screens */
     background-blend-mode: overlay;
 }
 
@@ -424,6 +426,10 @@ a { text-decoration: none; }
 @media (min-width: 800px) {
     section {
         padding: 15em 1em;
+    }
+
+    .main-content {
+        background-size: cover;
     }
 }
 
